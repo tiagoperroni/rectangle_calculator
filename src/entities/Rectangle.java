@@ -29,7 +29,7 @@ public class Rectangle {
 		this.heigth = heigth;
 	}
 	
-	public double Area() {
+	public double area() {
 		return this.heigth * this.width;
 	}
 	
@@ -42,6 +42,12 @@ public class Rectangle {
 	public double perimeter() {
 		double perimeter = 2 * (heigth + width);
 		return perimeter;
+	}
+	
+	public String toString() {
+		return "Area = " + String.format("%.2f", area()) + "\n"
+				+ "Perimeter =  " + String.format("%.2f", perimeter()) + "\n"
+				+ "Diagonal = " + String.format("%.2f", diagonal());
 	}
 	
 	
