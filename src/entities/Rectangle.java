@@ -33,15 +33,17 @@ public class Rectangle {
 		return this.heigth * this.width;
 	}
 	
+	public double diagonal() {
+		int diagonal = (int) (Math.sqrt(width * 2) + Math.sqrt(heigth * 2));
+		return diagonal;
+	}
+	
+	
 	public double perimeter() {
 		double perimeter = 2 * (heigth + width);
 		return perimeter;
 	}
 	
-	public double diagonal() {
-		int diagonal = (int) (Math.sqrt(width * 2) + Math.sqrt(heigth * 2));
-		return diagonal;
-	}
 	
 	
 	
